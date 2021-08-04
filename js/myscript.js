@@ -5,8 +5,11 @@ var surnameUser = prompt("Inserisci il tuo cognome");
 // User favourite color
 var colourUser = prompt("Inserisci il tuo colore preferito");
 
+// Random number
+var randomNumber = parseInt(Math.random() * 1000);
+
 // Random password formula
-var randomPassword = nameUser + surnameUser + colourUser + '21';
+var randomPassword = nameUser + surnameUser + colourUser + randomNumber;
 
 // random password
-document.getElementById("generatedPassword").innerHTML = randomPassword;
+document.getElementById("Generated-Password").innerHTML = randomPassword;
